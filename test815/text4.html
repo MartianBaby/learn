@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型</title>
+    <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .one{
+        width: 300px;
+        height: auto;
+        border: 2px red solid;  
+    }
+    .two{
+        margin: 30px 60px 40px 30px;
+        text-align: center;
+        border: 2px #eee solid;
+
+    }
+    h3{
+        background-color: #eee;
+        border: 2px #eee solid;
+    }
+    ul{
+       list-style: none;
+       display: none;
+    }
+    h3:hover + ul{display: block;}
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="two">
+            <div class="div1">
+                <h3>家电</h3>
+                <ul>
+                    <li>冰箱</li>
+                    <li>洗衣机</li>
+                    <li>空调</li>
+                </ul>
+            </div>
+            <div class="div2">
+                <h3>洗护</h3>
+                <ul>
+                    <li>洗衣液</li>
+                    <li>消毒液</li>
+                    <li>柔顺剂</li>
+                </ul>
+            </div>
+            <div class="div3">
+                <h3>衣物</h3>
+                <ul>
+                    <li>衬衫</li>
+                    <li>裤子</li>
+                    <li>卫衣</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
