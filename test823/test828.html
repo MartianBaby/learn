@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .header ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    .header ul li{
+        padding: 0 50px;
+    }
+    .header{
+        width: 100%;
+        height: 100px;
+        background-color: #eee;
+        display: flex;
+        justify-content: space-between;
+    }
+    .content img{
+        width: 380px;
+        height: 240px;
+    }
+    .content{
+        position: relative;
+    }
+    .content .top{
+        position: absolute;
+        z-index: 2;
+        width: 380px;
+        height: 240px;
+        top: 0px;
+        background-color: black;
+        opacity: 0.5;
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="http://climg.mukewang.com/595dd5120001736902000080.png"/>
+        <ul>
+            <li>前端</li>
+            <li>后端</li>
+            <li>移动端</li>
+            <li>数据库</li>
+        </ul>
+    </div>
+    <div class="content">
+        <img src="http://climg.mukewang.com/58f829ca00010be703840240.jpg"/>
+        <div class="top"></div>
+    </div>
+    
+</body>
+</html>
