@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <h1 align="center">注册信息</h1>
+        <hr color="blue"/>
+        <form>
+            <table width="600px" bgcolor="grey" align="center">
+                <tr>
+                    <td align="right">姓名：</td>
+                    <td align="left"><input type="text" name="username" size="25" maxlength="6" placeholder="请输入姓名"/></td>
+                </tr>
+                <tr>
+                    <td align="right">邮箱：</td>
+                    <td align="left"><input type="text" name="email" value="@163.com"/></td>
+                </tr>
+                <tr>
+                    <td align="right">密码：</td>
+                    <td align="left"><input type="password" name="paw" size="25" maxlength="6" placeholder="请输入密码"/></td>
+                </tr>
+                <tr>
+                    <td align="right">确认密码：</td>
+                    <td align="left"><input type="password" name="paw-conform" size="25" maxlength="6" placeholder="请再输入密码"/></td>
+                </tr>
+                <tr>
+                    <td align="right">上传照片：</td>
+                    <td align="left"><input type="file" name="file" size="25" maxlength="6" placeholder="请输入密码"/></td>
+                </tr>
+                <tr>
+                    <td align="right">性别：</td>
+                    <td align="left">男<input type="radio" name="sex1" value="man"/>
+                        女<input type="radio" name="sex1"value="woman" checked/>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">爱好：</td>
+                    <td align="left">读书<input type="checkbox" name="dx1" value="1"/>
+                        唱歌<input type="checkbox" name="dx2"value="1"/>
+                        跳舞<input type="checkbox" name="dx3"value="1"/></td>
+                </tr>
+                <tr>
+                    <td align="right">爱好：</td>
+                    <td align="left">篮球<input type="checkbox" name="dx1" value="1" checked/>
+                        足球<input type="checkbox" name="dx2"value="1"/>
+                        排球<input type="checkbox" name="dx3"value="1"/></td>
+                </tr>
+                <tr>
+                    <td align="right">城市：</td>
+                    <td align="left">
+                        <select name="city">
+                            <option value="bj">北京</option>
+                            <option value="tj">天津</option>
+                            <option value="sh">上海</option>
+                            <option value="gz">广州</option>
+                        </select>
+                        <select name="city" size="3" multiple>
+                            <option value="bj">北京</option>
+                            <option value="tj">天津</option>
+                            <option value="sh">上海</option>
+                            <option value="gz">广州</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="button" name="button" value="点我"/>
+                        <input type="reset" name="reset" value="重置"/>
+                        <input type="submit" name="submit" value="提交"/>
+                        <input type="hidden" name="hidden" value="这是一个注册信息"/></td>
+                </tr>
+                <tr>
+                    <td align="right">请作自我介绍：</td>
+                    <td align="left"><textarea rows="3" cols="20" placeholder="请在此处介绍自己..."></textarea></td>
+                </tr>
+            </table>
+        </form>
+    <form>
+        下拉菜单：
+        <select name="dongwu">
+            <option selected>熊猫</option>
+            <option>猫</option>
+            <option>狗</option>
+            <option>猪</option>
+            <option>猴子</option>
+        </select>
+        列表：
+        <select name="shuiguo" size="3" multiple>
+            <option>苹果</option>
+            <option>香蕉</option>
+            <option>橙子</option>
+            <option>桃子</option>
+            <option>梨子</option>
+        </select>
+    </form>
+    <form>
+        <select>
+            <option selected>请选择</option>
+            <option>请选择</option>
+            <optgroup label="水果">
+                <option>苹果</option>
+                <option>猕猴桃</option>
+                <option>杏子</option>
+            </optgroup>
+            <optgroup label="蔬菜">
+                <option>西红柿</option>
+                <option>白菜</option>
+                <option>油麦菜</option>
+            </optgroup>
+         </select>
+    </form>
+    </body>
+</html>

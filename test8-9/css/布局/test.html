@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>布局</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        body{
+            width: 100%;
+        }
+        .header{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
+        .header li{
+            display: inline-block;
+            margin: 0 20px;
+        }
+        .content{
+            display: flex;
+            background-color:#3cf;
+        }
+        .footer{
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            background-color: black;
+           
+        }
+        .left{
+            width: 40%;
+            height: 500px;
+            margin: 200px 100px;
+        }
+        table{
+            border-spacing: 0px 20px;
+        }
+        .td1{
+            background-color: orange;
+        }
+        .right{
+            width: 40%;
+            height: 500px;
+            margin: 200px 50px;
+        }
+        span{
+            display: inline-block;
+            margin: 10px 10px;
+        }
+        .middle{
+            width: 20%;
+            height: 500px;
+            margin: 200px 200px 200px 50px;
+        }
+        </style>
+</head>
+<body>
+    <div class="header">
+        <img src="http://climg.mukewang.com/58c0d2d900016ce303000100.png"/>
+        <ul>
+            <li>课程</li>
+            <li>职业路径</li>
+            <li>实践</li>
+            <li>猿问</li>
+            <li>手记</li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="left">
+            <h2>课程推荐</h2>
+            <table  cellspacing="20px">
+                <tr>
+                    <td class="td1">职业路径</td>
+                    <td class="td2">HTML5与CSS实现动态页面</td>
+                </tr>
+                <tr>
+                    <td class="td1">职业路径</td>
+                    <td class="td2">零基础入门Android语法与界面</td>
+                </tr>
+                <tr>
+                    <td class="td1">职业路径</td>
+                    <td class="td2">IOS基础语法与常用控件</td>
+                </tr>
+                <tr>
+                    <td class="td1">职业路径</td>
+                    <td class="td2">PHP入门开发</td>
+                </tr>
+                <tr>
+                    <td class="td1">职业路径</td>
+                    <td class="td2">JAVA入门</td>
+                </tr>
+            </table>
+        </div>
+        <div class="right">
+            <h2>相关课程</h2>
+            <ul>
+                <li>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JAVASCRIPT</span>
+                </li>
+                <li>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JAVA</span>
+                </li>
+                <li>
+                    <span>移动端基础</span>
+                    <span>移动端APP开发</span>
+                </li>
+            </ul>
+        </div>
+        <div class="middle">
+            <h2>登录</h2>
+            <input  type="text" name="dengluhao" placeholder="请输入登录邮箱/手机号" maxlength="80px"/>
+            <br/>
+            <input type="password" name="password"placeholder="6-16位字母，区分大小写，不能用空格"/>
+            <br/>
+            <input type="submit" name="登录" value="登录"/>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="#">网站首页</a></li>
+            <li><a href="#">企业合作</a></li>
+            <li><a href="#">人才招聘</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">友情链接</a></li>
+        </ul>
+    </div>
+</body>
+</html>
