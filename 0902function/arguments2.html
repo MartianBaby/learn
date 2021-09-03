@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function get_year(){
+            var year = prompt("请输入你的出生年份");
+            return year;
+        }
+        function get_month(){
+            var month = prompt("请输入你的出生月份");
+            return month;
+        }
+        function get_date(){
+            var date = prompt("请输入你的出生日期");
+            return date;
+        }
+        function myFun(){
+            var dayArr = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+            var y = get_year();
+            if((y % 4 == 0 && y % 100 != 0) || y % 400 == 0){
+                dayArr[1] = 29;
+            }
+            var m = get_month();
+            while(m > 12 || m < 1){
+                alert("月份只能是1-12的整数");
+                m = get_month();
+            }
+            var d = get_date();
+            while(d < 1 || d > dayArr[m-1]){
+                alert(m+"月没有"+d+"号，请输入1-"+dayArr[m-1]+"的整数！");
+                d = get_date();
+            }
+            var i, sum = 0;
+            for(i = 1; i <= m-1; i++){
+                sum += parseInt(dayArr[i - 1]);
+            }
+            sum +=parseInt(d);
+            alert("您的生日在" + y + "年是第" + sum + "天。");
+        }
+        myFun();
+    </script>
+</body>
+</html>
