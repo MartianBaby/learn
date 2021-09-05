@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var input,a;
+        var arr = [];
+        while(input != "-1"){
+            input = Number(prompt("请输入任意您想输入的字符"));
+            arr.push(input);
+        }
+        arr.pop();
+        a = arr.splice(0,2,"hello");
+        document.write(arr+"<br/>");
+        document.write(a);
+    </script>
+</body>
+</html>
