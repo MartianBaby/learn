@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = prompt("请输入登录邮箱"); 
+        var pos = str.indexOf("@");
+        var a = str.lastIndexOf(".");
+        document.write("邮箱的用户名是："+str.slice(0,pos)+"<br/>");
+        document.write("登录的邮箱域名是："+str.slice(pos+1)+"邮箱");
+    </script>
+</body>
+</html>
