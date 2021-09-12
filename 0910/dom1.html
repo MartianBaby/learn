@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="录入">
+    <script>
+        var btn = document.getElementsByTagName("input")[0];
+        function entryFn(){
+            var arr = [];
+            var input = "";
+            var flag = true;
+            while(flag){
+                console.log(flag,input);
+                input = prompt("请输入员工姓名");
+                flag = input !== "-1"
+                flag && arr.push(input);    
+            }
+            //arr.pop();
+            for(var i = 0; i < arr.length; i++){
+                document.write(`录入的第${i+1}个员工信息是：${arr[i]}<br/>`);
+            }
+        }
+        btn.onclick = entryFn;
+        console.log(123);
+    </script>
+</body>
+</html>

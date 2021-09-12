@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    .purple{
+        color:purple;
+        background-color:pink;}
+    .yellow{
+        color:yellow;
+        background-color:orange;
+    }
+    </style>
+</head>
+<body>
+    <h2>网络游戏排名</h2>
+    <ul id = "lis"> 
+        <li>英雄联盟</li>
+        <li>魔兽世界</li>
+        <li>DOTA</li>
+        <li>仙剑奇侠传</li>
+        <li>穿越火线</li>
+        <li>梦幻西游</li>
+    </ul>
+    <script>
+        var lis = document.getElementById("lis").getElementsByTagName("li");
+        for(var i = 0; i < lis.length; i +=2){
+            lis[i].setAttribute("class","purple");
+        }
+        for(var i = 1; i < lis.length; i +=2){
+            lis[i].setAttribute("class","yellow");
+        }
+    </script>
+</body>
+</html>

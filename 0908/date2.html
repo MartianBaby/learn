@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var input1 = Number(prompt("请输入员工入职年份"));
+        var input2 = Number(prompt("请输入员工的入职月份"));
+        var input3 = Number(prompt("请输入员工入职时间"));
+        document.write("该员工的入职时间是：" + input1 + "-" + input2 + "-" + input3);
+        function daoDate(){
+            var daoqi = new Date(input1 + 3, input2, input3);
+            document.write("该员工合同到期时间是：" + daoqi.getFullYear() + "-"+ daoqi.getMonth() + "-" + daoqi.getDate());
+        }
+        daoDate();
+    </script>     
+</body>
+</html>

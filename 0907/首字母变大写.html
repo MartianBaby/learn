@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = "all time is no time when it is past";
+        function toUpper(str){
+            var x = str.split(" ");
+            for(var ret = [], i = 0; i < x.length; i++){
+                var big = x[i].slice(0,1).toUpperCase();
+                var small = x[i].slice(1).toLowerCase();
+                var f = big.concat(small);
+                ret[i]=f+" ";
+                var newStr = ret.join("");
+            }
+            return(newStr);
+        }
+        document.write(newStr);
+    </script>
+</body>
+</html>
