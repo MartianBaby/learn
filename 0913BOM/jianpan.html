@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>字数控制在30字内，<span id="exp">您还可以输入<b id="count">30</b>/30字</span></p>
+    <textarea cols="50" rows="7" id="text"></textarea>
+    <script type="text/javascript">
+    var text = document.getElementById("text");
+    var total = 30;
+    var count = document.getElementById("count");
+    var sp = document.getElementById("exp")
+    document.onkeyup = function(){
+        var len = text.value.length;
+        var allow = total - len;
+        count.innerHTML = allow;
+        var exp = len - total;
+        if(allow < 0){
+            sp.innerHTML="已超出" + exp + "字"
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    .red{
+        border:1px solid red;
+    }
+    .tip{
+        display: none;
+    }
+    .tip-block{
+        display:inline-block;
+        color:red;
+    }
+    </style>
+</head>
+<body>
+    姓名：<input type="text"><span class="tip">请输入用户名</span>
+    <script type="text/javascript">
+        var btn = document.getElementsByTagName("input")[0];
+        var tip = document.getElementsByTagName("span")[0];
+        btn.onfocus = function(){
+            if(this.value === ""){
+                tip.classList.add("tip-block");
+                //tip.style.display = "inline-block";
+            }else{
+                tip.classList.remove("tip-block");
+                //tip.style.display = "none";
+            }            
+        }
+        btn.oninput = function(e){
+            console.log(this.value,e,e.target.value);
+        }
+         btn.onblur = function(){
+            var btnValue = this.value;
+            if(btnValue === ""){
+                //alert("用户名不能为空");
+                tip.style.display = "inline-block";
+                tip.innerHTML = "用户名不能为空";
+                this.className = "red";
+            }else{
+                tip.style.display = "none";
+                tip.innerHTML = "请输入用户名";
+                this.className = "";
+            }    
+        } 
+    
+
+    </script>
+</body>
+</html>

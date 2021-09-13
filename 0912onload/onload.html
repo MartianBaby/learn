@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            var btn = document.getElementsByTagName("input")[0];
+            var btn1 = document.getElementsByTagName("input")[1];
+
+            var clicked = function(){
+                this.style.color = "red";
+            }
+            btn.onclick = clicked;
+            btn1.onclick = clicked;
+            var mouse = function(){
+                this.style.color = "gray";
+            }
+            btn.onmouseout = mouse;
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="点击改变按钮字体颜色">
+    <input type="button" value="点击改变按钮字体颜色">
+
+</body>
+</html>
