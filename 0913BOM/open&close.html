@@ -10,7 +10,11 @@
     <input type="button" value="关闭本页面" id="close">
     <input type="button" value="打开慕课网" id="open">
     <script type="text/javascript">
-    var btn1= document.getElementById("close");
+    var btn1= customById("close");
+    function customById(idName) {
+        return document.querySelector(`#${idName}`)
+    }
+    document.getElementById = customById
     var btn2= document.getElementById("open");
     btn1.onclick=function(){
         window.close();
