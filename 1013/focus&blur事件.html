@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" value=""><span></span>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("input").focus(function(){
+                $("span").text("请输入用户名")
+            });
+            $("input").blur(function(){
+                $("span").text("用户名不能为空")
+            });
+            if(input.value === "imooc"){
+                $("input").css({"border":"2px green"});
+            }
+        });
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>这个表格没有边框：</h2>
+    <table>
+        <tr>
+            <td>100</td>
+            <td>200</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>400</td>
+            <td>500</td>
+            <td>600</td>
+        </tr>
+    </table>
+    <h2>表头</h2>
+    <table border="1">
+        <tr>
+            <th>姓名</th>
+            <th>电话</th>
+        </tr>
+        <tr>
+            <td>mimi</td>
+            <td>11122233344</td>
+        </tr>
+    </table>
+    <h2>垂直表头</h2>
+    <table border="1">
+        <tr>
+            <th>姓名</th>
+            <td>mimi</td>
+        </tr>
+        <tr>
+            <th>电话</th>
+            <td>22233344455</td>
+        </tr>
+    </table>
+    <h2>空单元格</h2>
+    <table border="1">
+        <tr>
+            <td>1111</td>
+            <td>2222</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>2222</td>
+        </tr>
+    </table>
+    <h2>空单元格</h2>
+    <table border="1">
+        <tr>
+            <td>1111</td>
+            <td>2222</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>2222</td>
+        </tr>
+    </table>
+    <h2>横跨两列的单元格：</h2>
+    <table border="1">
+        <tr>
+            <td>姓名</td>
+            <td colspan="2">电话/手机号</td>
+        </tr>
+        <tr>
+            <td>mimi</td>
+            <td>11122233</td>
+            <td>11122233</td>
+        </tr>
+    </table>
+    <h2>横跨两行的单元格：</h2>
+    <table border="1">
+        <tr>
+            <td>姓名</td>
+            <td>电话/手机号</td>
+        </tr>
+        <tr>
+            <td rowspan="2">mimi</td>
+            <td>11122233</td>
+        </tr>
+        <tr>
+            <td>22222233</td>
+        </tr>
+    </table>
+</body>
+</html>

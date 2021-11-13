@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML表单</h1>
+    <form action="/demo/html/action_page.php" target="_blank" method="post">
+        <label for="fname">First name:</label><br/>
+        <input type="text" id="fname" name="fname" value="Bill"><br/>
+        <label for="lname">Last name:</label><br/>
+        <input type="text" id="lname" name="lname" value="Gates"><br/><br/>
+        <input type="submit" value="提交">
+    </form>
+    <p>如果您点击提交按钮，form-data会被发送到名为"/action_page.php"的页面。</p>
+</body>
+</html>

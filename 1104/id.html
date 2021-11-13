@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myHeader{
+            background-color: lightblue;
+            color: black;
+            padding: 40px;
+            text-align: center;
+        }
+        .city{
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>id 属性</h1>
+    <p>使用CSS来设置ID为“myHeader”的元素的样式：</p>
+    <h1 id="myHeader">My Header</h1>
+    <h1>Class与ID的差异</h1>
+    <p>一个类名可以由多个HTML元素使用，而一个ID名称只能由页面中的一个HTML元素使用：</p>
+    <h1 id="myHeader">我的城市</h1>
+    <h2 class="city">上海</h2>
+    <p>中国最大的经济城市。</p>
+    <h2 class="city">深圳</h2>
+    <p>中国最具有创新力的城市。</p>
+    <h2 class="city">北京</h2>
+    <p>中国的首都。</p>
+    <p><a href="#C4">跳转到Chapter4</a></p>
+    <p><a href="#C10">跳转到Chapter10</a></p>
+    <p><a href="#myHeader">跳转到myHeader</a></p>
+    <p><a href="#myHeader">跳转到我的城市</a></p>
+    <h2>Chapter1</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h2>Chapter2</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h2>Chapter3</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h2 id="C4">Chapter4</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h2>Chapter5</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h2>Chapter6</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h2>Chapter7</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h2>Chapter8</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h2>Chapter9</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h2 id="C10">Chapter10</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h2>Chapter11</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h2>Chapter12</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h2>Chapter13</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h2>Chapter14</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h2>Chapter15</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h2>Chapter16</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h2>Chapter17</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h2>Chapter18</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h2>Chapter19</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h2>Chapter20</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h2>Chapter21</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h2>Chapter22</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h2>Chapter23</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h2>Chapter24</h2>
+    <p>This chapter explains ba ba ba</p>
+    <h1>在JavaScript中使用ID属性</h1>
+    <p>JavaScript可以使用getElementById()方法访问具有指定ID的元素：</p>
+    <h2 id="myHead">Hello World!</h2>
+    <button onclick="displayResult()">改变文本</button>
+    <script>
+        function displayResult(){
+            document.getElementById("myHead").innerHTML="Have a nice day!"
+        }
+    </script>
+</body>
+</html>
