@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("li").mouseenter(function(){
+                $("li").eq($(this).index())
+                .css({"font-size":"24px","color":"red"})
+            });
+            $("li").mouseleave(function(){
+                $("li").eq($(this).index())
+                .css({"font-size":"18px", "color":"black"})
+            });
+        });
+    </script>
+</body>
+</html>

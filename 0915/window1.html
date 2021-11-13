@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" name="" value="打开页面">
+    <script type="text/javascript">
+    var btn=document.getElementsByTagName("input")[0];
+    btn.onclick=function(){
+        var confirm=window.confirm("是否打开此页面？");
+        if(confirm == true){
+            window.open("newPage.html","width=300, height=300, top=200, left=600,status=no, scrollbars=no, menubar=no");
+        }
+        if(confirm == false){
+            window.close()
+        }
+    }
+    </script>
+</body>
+</html>
