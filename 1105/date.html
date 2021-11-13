@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var date1 = new Date(2007, 0, 1);
+        var date2 = new Date(2007, 1, 1);
+        console.log(date1 > date2);
+        console.log(date1 < date2);
+        var someDate = new Date(Date.parse("May 25, 2004"));
+        console.log(someDate);
+        var y2k = new Date(Date.UTC(2000, 0));
+        var allFives = new Date(Date.UTC(2005, 4, 5, 17, 55, 55));
+        var y2kk = new Date(2000, 0);
+        var allFivess = new Date(2005, 4, 5, 17, 55, 55);
+        var start = Date.now();
+        doSomething();
+        var stop = Date.now();
+        result = stop - start;
+        console.log(result);
+
+    </script>
+</body>
+</html>
